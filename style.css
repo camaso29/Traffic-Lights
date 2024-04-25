@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    height: 100vh;
+    width: 100%;
+    background-color: lightblue;
+    position: relative;
+}
+.outside_box {
+    height: 50vh;
+    width: 10%;
+    position: relative;
+    top: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:rgb(41, 42, 49);
+    border: solid 3px black;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 3px black inset;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.light_box {
+    height: 50%;
+    width: 80%;
+    background-color: rgb(68, 211, 216);
+    border: solid 3px black;
+    background-color:rgb(41, 42, 49);
+    border: solid 3px rgb(83, 83, 83);
+    border-radius: 150px;
+    box-shadow: 0px 0px 20px 3px black inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.light {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    z-index: 77;
+}
+#red {
+    background-color: #ba181b;
+    box-shadow: 0px 0px 15px 8px #660708 inset;
+}
+#yellow {
+    background-color: #f8f835;
+    box-shadow: 0px 0px 15px 8px #cba900 inset;
+}
+#green {
+    background-color: #8cec55;
+    box-shadow: 0px 0px 15px 8px #00a542 inset;
+}
+#red.light.active {
+    background-color: red;
+    box-shadow: 0px 0px 15px 8px #ff0000;
+}
+#yellow.light.active {
+    background-color: yellow;
+    box-shadow: 0px 0px 15px 8px #ffd500;
+}
+#green.light.active {
+    background-color: #3ef14a;
+    box-shadow: 0px 0px 15px 8px #28e92b;
+}
+.light_top {
+    width: 70%; 
+    height: 70%;
+    border-radius: 50%;
+    background-color: #565264;
+    border: 1px solid black;
+    position: absolute;
+    top: 15px;
+    z-index: 8;
+}
+.box__border{
+    height: 51.5vh;
+    width: 19vw;
+    background-image: linear-gradient(to top, #22223b,#4a4e69);
+    position: absolute;
+    top: 19.4vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.post{
+    height: 50vh;
+    width: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3d405b;
+    border: solid 3px black;
+    box-shadow: 0px 0px 20px 3px black inset;
+}
+.post__shadow{
+    height: 5vh;
+    width: 5vw;
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 20px 3px black;
+}
